@@ -137,9 +137,7 @@ Wire Wire Line
 	2450 5750 2450 5650
 Wire Wire Line
 	2350 7250 2350 7600
-Text GLabel 7550 2700 0    50   Input ~ 0
-VIN
-Text GLabel 8800 2700 2    50   Input ~ 0
+Text GLabel 8800 2700 2    50   Output ~ 0
 VOUT
 $Comp
 L Device:LED D?
@@ -873,7 +871,7 @@ F 3 "~" H 6600 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6600 6000 6600 6200
-Text GLabel 6000 5600 0    50   Input ~ 0
+Text GLabel 6000 5600 0    50   Output ~ 0
 BTN1
 $Comp
 L power:GND #PWR?
@@ -996,8 +994,6 @@ F 3 "~" H 7900 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 3600 8200 3600
-Wire Wire Line
-	7550 2700 7900 2700
 Connection ~ 7900 2700
 Connection ~ 8500 2700
 Wire Wire Line
@@ -1179,7 +1175,7 @@ F 3 "~" H 8000 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8000 6000 8000 6200
-Text GLabel 7400 5600 0    50   Input ~ 0
+Text GLabel 7400 5600 0    50   Output ~ 0
 BTN2
 $Comp
 L power:GND #PWR?
@@ -1223,7 +1219,7 @@ F 3 "~" H 9500 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9500 6000 9500 6200
-Text GLabel 8900 5600 0    50   Input ~ 0
+Text GLabel 8900 5600 0    50   Output ~ 0
 BTN3
 $Comp
 L power:GND #PWR?
@@ -1257,7 +1253,7 @@ L Switch:SW_Push SW1
 U 1 1 5EA2ED5D
 P 6600 5200
 F 0 "SW1" V 6554 5348 50  0000 L CNN
-F 1 "SW_Push" V 6645 5348 50  0000 L CNN
+F 1 "Power-Up Button" V 6645 5348 50  0000 L CNN
 F 2 "" H 6600 5400 50  0001 C CNN
 F 3 "~" H 6600 5400 50  0001 C CNN
 	1    6600 5200
@@ -1268,7 +1264,7 @@ L Switch:SW_Push SW2
 U 1 1 5EA494B0
 P 8000 5200
 F 0 "SW2" V 7954 5348 50  0000 L CNN
-F 1 "SW_Push" V 8045 5348 50  0000 L CNN
+F 1 "Horizontal" V 8045 5348 50  0000 L CNN
 F 2 "" H 8000 5400 50  0001 C CNN
 F 3 "~" H 8000 5400 50  0001 C CNN
 	1    8000 5200
@@ -1279,7 +1275,7 @@ L Switch:SW_Push SW3
 U 1 1 5EA5013D
 P 9500 5200
 F 0 "SW3" V 9454 5348 50  0000 L CNN
-F 1 "SW_Push" V 9545 5348 50  0000 L CNN
+F 1 "Vertical" V 9545 5348 50  0000 L CNN
 F 2 "" H 9500 5400 50  0001 C CNN
 F 3 "~" H 9500 5400 50  0001 C CNN
 	1    9500 5200
@@ -1297,4 +1293,30 @@ Wire Wire Line
 	1350 6750 1650 6750
 Wire Wire Line
 	1150 6450 1650 6450
+$Comp
+L Device:Battery BT1
+U 1 1 5EAA7AF4
+P 7000 2900
+F 0 "BT1" H 7108 2946 50  0000 L CNN
+F 1 "Battery" H 7108 2855 50  0000 L CNN
+F 2 "" V 7000 2960 50  0001 C CNN
+F 3 "~" V 7000 2960 50  0001 C CNN
+	1    7000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2700 7900 2700
+Wire Wire Line
+	7000 3100 7000 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5EABCA3C
+P 7000 3600
+F 0 "#PWR?" H 7000 3350 50  0001 C CNN
+F 1 "GND" H 7005 3427 50  0000 C CNN
+F 2 "" H 7000 3600 50  0001 C CNN
+F 3 "" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

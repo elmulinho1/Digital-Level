@@ -877,17 +877,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    3950 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push_Open SW1
-U 1 1 5E5D8FE1
-P 6600 5200
-F 0 "SW1" V 6554 5277 50  0000 L CNN
-F 1 "SW_Push_Open" V 6645 5277 50  0000 L CNN
-F 2 "" H 6600 5400 50  0001 C CNN
-F 3 "~" H 6600 5400 50  0001 C CNN
-	1    6600 5200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6600 5600 6600 5700
 $Comp
@@ -1208,17 +1197,6 @@ F 3 "" H 6600 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 5600 6600 5600
-$Comp
-L Switch:SW_Push_Open SW2
-U 1 1 5EA01BE2
-P 8000 5200
-F 0 "SW2" V 7954 5277 50  0000 L CNN
-F 1 "SW_Push_Open" V 8045 5277 50  0000 L CNN
-F 2 "" H 8000 5400 50  0001 C CNN
-F 3 "~" H 8000 5400 50  0001 C CNN
-	1    8000 5200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8000 5600 8000 5700
 $Comp
@@ -1263,17 +1241,6 @@ F 3 "" H 8000 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7400 5600 8000 5600
-$Comp
-L Switch:SW_Push_Open SW3
-U 1 1 5EA07F9B
-P 9500 5200
-F 0 "SW3" V 9454 5277 50  0000 L CNN
-F 1 "SW_Push_Open" V 9545 5277 50  0000 L CNN
-F 2 "" H 9500 5400 50  0001 C CNN
-F 3 "~" H 9500 5400 50  0001 C CNN
-	1    9500 5200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9500 5600 9500 5700
 $Comp
@@ -1322,4 +1289,37 @@ Wire Wire Line
 	1250 6450 1250 7600
 Wire Wire Line
 	1550 6750 1550 7600
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5EA2ED5D
+P 6600 5200
+F 0 "SW1" V 6554 5348 50  0000 L CNN
+F 1 "SW_Push" V 6645 5348 50  0000 L CNN
+F 2 "" H 6600 5400 50  0001 C CNN
+F 3 "~" H 6600 5400 50  0001 C CNN
+	1    6600 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5EA494B0
+P 8000 5200
+F 0 "SW2" V 7954 5348 50  0000 L CNN
+F 1 "SW_Push" V 8045 5348 50  0000 L CNN
+F 2 "" H 8000 5400 50  0001 C CNN
+F 3 "~" H 8000 5400 50  0001 C CNN
+	1    8000 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5EA5013D
+P 9500 5200
+F 0 "SW3" V 9454 5348 50  0000 L CNN
+F 1 "SW_Push" V 9545 5348 50  0000 L CNN
+F 2 "" H 9500 5400 50  0001 C CNN
+F 3 "~" H 9500 5400 50  0001 C CNN
+	1    9500 5200
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

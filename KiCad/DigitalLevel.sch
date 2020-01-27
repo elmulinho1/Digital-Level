@@ -72,8 +72,6 @@ Wire Wire Line
 Text GLabel 3350 6250 2    50   Input ~ 0
 INT
 Wire Wire Line
-	1650 6450 1250 6450
-Wire Wire Line
 	3050 6850 3350 6850
 Wire Wire Line
 	3350 6850 3350 7100
@@ -90,8 +88,6 @@ F 3 "~" H 3350 7250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 7400 3350 7600
-Wire Wire Line
-	1650 6750 1550 6750
 $Comp
 L Device:C C1
 U 1 1 5E305EAE
@@ -121,21 +117,6 @@ Wire Wire Line
 	3800 7400 3800 7600
 Wire Wire Line
 	2250 5850 2250 5750
-Wire Wire Line
-	800  6850 800  7600
-$Comp
-L Device:C C3
-U 1 1 5E31CE3D
-P 800 6700
-F 0 "C3" H 915 6746 50  0000 L CNN
-F 1 "0.01u" H 915 6655 50  0000 L CNN
-F 2 "" H 838 6550 50  0001 C CNN
-F 3 "~" H 800 6700 50  0001 C CNN
-	1    800  6700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	800  6550 800  6500
 Wire Wire Line
 	1800 5750 1800 5650
 $Comp
@@ -911,12 +892,12 @@ Connection ~ 6600 5600
 $Comp
 L power:GND #PWR?
 U 1 1 5E6CB783
-P 800 7600
-F 0 "#PWR?" H 800 7350 50  0001 C CNN
-F 1 "GND" H 805 7427 50  0000 C CNN
-F 2 "" H 800 7600 50  0001 C CNN
-F 3 "" H 800 7600 50  0001 C CNN
-	1    800  7600
+P 1150 7600
+F 0 "#PWR?" H 1150 7350 50  0001 C CNN
+F 1 "GND" H 1155 7427 50  0000 C CNN
+F 2 "" H 1150 7600 50  0001 C CNN
+F 3 "" H 1150 7600 50  0001 C CNN
+	1    1150 7600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1093,18 +1074,15 @@ Wire Wire Line
 Wire Wire Line
 	1050 1850 2250 1850
 Connection ~ 2250 1850
-Connection ~ 800  6850
-Wire Wire Line
-	800  6850 1650 6850
 $Comp
 L power:GND #PWR?
 U 1 1 5E9579DB
-P 1250 7600
-F 0 "#PWR?" H 1250 7350 50  0001 C CNN
-F 1 "GND" H 1255 7427 50  0000 C CNN
-F 2 "" H 1250 7600 50  0001 C CNN
-F 3 "" H 1250 7600 50  0001 C CNN
-	1    1250 7600
+P 1350 7600
+F 0 "#PWR?" H 1350 7350 50  0001 C CNN
+F 1 "GND" H 1355 7427 50  0000 C CNN
+F 2 "" H 1350 7600 50  0001 C CNN
+F 3 "" H 1350 7600 50  0001 C CNN
+	1    1350 7600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1160,17 +1138,6 @@ F 1 "+3.3V" H 1815 5523 50  0000 C CNN
 F 2 "" H 1800 5350 50  0001 C CNN
 F 3 "" H 1800 5350 50  0001 C CNN
 	1    1800 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5E9A73F6
-P 800 6500
-F 0 "#PWR?" H 800 6350 50  0001 C CNN
-F 1 "+3.3V" H 815 6673 50  0000 C CNN
-F 2 "" H 800 6500 50  0001 C CNN
-F 3 "" H 800 6500 50  0001 C CNN
-	1    800  6500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1285,10 +1252,6 @@ F 3 "" H 9500 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 5600 9500 5600
-Wire Wire Line
-	1250 6450 1250 7600
-Wire Wire Line
-	1550 6750 1550 7600
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5EA2ED5D
@@ -1322,4 +1285,16 @@ F 3 "~" H 9500 5400 50  0001 C CNN
 	1    9500 5200
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	1150 6450 1150 7600
+Wire Wire Line
+	1350 7600 1350 6750
+Wire Wire Line
+	1650 6850 1550 6850
+Wire Wire Line
+	1550 6850 1550 7600
+Wire Wire Line
+	1350 6750 1650 6750
+Wire Wire Line
+	1150 6450 1650 6450
 $EndSCHEMATC

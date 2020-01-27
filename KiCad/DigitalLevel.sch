@@ -1300,4 +1300,12 @@ F 3 "" H 3800 7600 50  0001 C CNN
 	1    3800 7600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3850 2450 3850 2250
+Text GLabel 3850 2250 1    50   Output ~ 0
+VCC
+Wire Wire Line
+	4150 2450 4150 2250
+Text GLabel 4150 2250 1    50   Input ~ 0
+VOUT
 $EndSCHEMATC

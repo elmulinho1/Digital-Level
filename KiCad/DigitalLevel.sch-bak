@@ -139,8 +139,6 @@ Wire Wire Line
 	3800 6750 3800 7100
 Wire Wire Line
 	2450 5850 2450 5750
-Text GLabel 2450 5650 1    50   Input ~ 0
-VCC
 Text GLabel 1150 6250 0    50   Input ~ 0
 SDA
 Text GLabel 1150 6350 0    50   Input ~ 0
@@ -168,8 +166,6 @@ F 3 "~" H 800 6700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	800  6550 800  6500
-Text GLabel 800  6500 1    50   Input ~ 0
-VCC
 Wire Wire Line
 	1800 5750 1800 5650
 $Comp
@@ -1136,17 +1132,9 @@ F 3 "" H 8200 3850 50  0001 C CNN
 	1    8200 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6600 5400 1    50   Input ~ 0
-VCC
-Text GLabel 8150 5400 1    50   Input ~ 0
-VCC
-Text GLabel 9700 5400 1    50   Input ~ 0
-VCC
 Wire Wire Line
 	9700 5400 9700 5550
 Connection ~ 9700 5550
-Text GLabel 1800 5350 1    50   Input ~ 0
-VCC
 Wire Wire Line
 	8500 2700 8800 2700
 Wire Wire Line
@@ -1300,12 +1288,70 @@ F 3 "" H 3800 7600 50  0001 C CNN
 	1    3800 7600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 2450 3850 2250
-Text GLabel 3850 2250 1    50   Output ~ 0
-VCC
-Wire Wire Line
-	4150 2450 4150 2250
-Text GLabel 4150 2250 1    50   Input ~ 0
-VOUT
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E99ED0A
+P 1800 5350
+F 0 "#PWR?" H 1800 5200 50  0001 C CNN
+F 1 "+3.3V" H 1815 5523 50  0000 C CNN
+F 2 "" H 1800 5350 50  0001 C CNN
+F 3 "" H 1800 5350 50  0001 C CNN
+	1    1800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9A73F6
+P 800 6500
+F 0 "#PWR?" H 800 6350 50  0001 C CNN
+F 1 "+3.3V" H 815 6673 50  0000 C CNN
+F 2 "" H 800 6500 50  0001 C CNN
+F 3 "" H 800 6500 50  0001 C CNN
+	1    800  6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9ADF66
+P 2450 5650
+F 0 "#PWR?" H 2450 5500 50  0001 C CNN
+F 1 "+3.3V" H 2465 5823 50  0000 C CNN
+F 2 "" H 2450 5650 50  0001 C CNN
+F 3 "" H 2450 5650 50  0001 C CNN
+	1    2450 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9B4D86
+P 6600 5400
+F 0 "#PWR?" H 6600 5250 50  0001 C CNN
+F 1 "+3.3V" H 6615 5573 50  0000 C CNN
+F 2 "" H 6600 5400 50  0001 C CNN
+F 3 "" H 6600 5400 50  0001 C CNN
+	1    6600 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9BB956
+P 8150 5400
+F 0 "#PWR?" H 8150 5250 50  0001 C CNN
+F 1 "+3.3V" H 8165 5573 50  0000 C CNN
+F 2 "" H 8150 5400 50  0001 C CNN
+F 3 "" H 8150 5400 50  0001 C CNN
+	1    8150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9C25E4
+P 9700 5400
+F 0 "#PWR?" H 9700 5250 50  0001 C CNN
+F 1 "+3.3V" H 9715 5573 50  0000 C CNN
+F 2 "" H 9700 5400 50  0001 C CNN
+F 3 "" H 9700 5400 50  0001 C CNN
+	1    9700 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

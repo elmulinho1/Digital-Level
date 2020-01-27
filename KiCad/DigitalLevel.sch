@@ -14,42 +14,27 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	7900 2700 7800 2700
+	7900 2700 7900 3050
 Wire Wire Line
-	7800 2700 7800 3050
-Wire Wire Line
-	8600 2700 8600 3050
+	8500 2700 8500 3050
 $Comp
 L Device:C C6
 U 1 1 5E30AD7A
-P 8600 3200
-F 0 "C6" H 8715 3246 50  0000 L CNN
-F 1 "1u" H 8715 3155 50  0000 L CNN
-F 2 "" H 8638 3050 50  0001 C CNN
-F 3 "~" H 8600 3200 50  0001 C CNN
-	1    8600 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C5
-U 1 1 5E30B2D2
-P 7800 3200
-F 0 "C5" H 7915 3246 50  0000 L CNN
-F 1 "1u" H 7915 3155 50  0000 L CNN
-F 2 "" H 7838 3050 50  0001 C CNN
-F 3 "~" H 7800 3200 50  0001 C CNN
-	1    7800 3200
+P 8500 3200
+F 0 "C6" H 8615 3246 50  0000 L CNN
+F 1 "1u" H 8615 3155 50  0000 L CNN
+F 2 "" H 8538 3050 50  0001 C CNN
+F 3 "~" H 8500 3200 50  0001 C CNN
+	1    8500 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 3350 7800 3600
-Wire Wire Line
-	8600 3600 8600 3350
+	8500 3600 8500 3350
 Wire Wire Line
 	8200 3000 8200 3600
 Connection ~ 8200 3600
 Wire Wire Line
-	8200 3600 8600 3600
+	8200 3600 8500 3600
 Wire Wire Line
 	8200 3600 8200 3850
 $Comp
@@ -887,8 +872,6 @@ Wire Wire Line
 	1050 1050 1050 1000
 Text GLabel 1050 1000 1    50   Input ~ 0
 DIODE-SW
-Wire Bus Line
-	10400 1850 1050 1850
 Wire Wire Line
 	10300 1700 10300 1850
 Wire Wire Line
@@ -1179,20 +1162,6 @@ F 3 "" H 10400 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10400 1950 10400 1850
-Wire Wire Line
-	7800 3600 8200 3600
-Connection ~ 7900 2700
-Wire Wire Line
-	7900 2700 8500 2700
-Wire Wire Line
-	8600 2700 8800 2700
-Wire Wire Line
-	7550 2700 7800 2700
-Connection ~ 7800 2700
-Wire Wire Line
-	8500 2700 8600 2700
-Connection ~ 8500 2700
-Connection ~ 8600 2700
 $Comp
 L power:GND #PWR?
 U 1 1 5E7EDCED
@@ -1215,4 +1184,99 @@ Wire Wire Line
 Connection ~ 9700 5550
 Text GLabel 1300 5200 1    50   Input ~ 0
 VCC
+Wire Wire Line
+	8500 2700 8800 2700
+Wire Wire Line
+	7900 3350 7900 3600
+$Comp
+L Device:C C5
+U 1 1 5E30B2D2
+P 7900 3200
+F 0 "C5" H 8015 3246 50  0000 L CNN
+F 1 "1u" H 8015 3155 50  0000 L CNN
+F 2 "" H 7938 3050 50  0001 C CNN
+F 3 "~" H 7900 3200 50  0001 C CNN
+	1    7900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3600 8200 3600
+Wire Wire Line
+	7550 2700 7900 2700
+Connection ~ 7900 2700
+Connection ~ 8500 2700
+Wire Wire Line
+	10400 1850 10300 1850
+Wire Wire Line
+	10300 1850 9950 1850
+Connection ~ 10300 1850
+Connection ~ 2600 1850
+Wire Wire Line
+	2600 1850 2250 1850
+Connection ~ 2950 1850
+Wire Wire Line
+	2950 1850 2600 1850
+Connection ~ 3300 1850
+Wire Wire Line
+	3300 1850 2950 1850
+Connection ~ 3650 1850
+Wire Wire Line
+	3650 1850 3300 1850
+Connection ~ 4000 1850
+Wire Wire Line
+	4000 1850 3650 1850
+Connection ~ 4350 1850
+Wire Wire Line
+	4350 1850 4000 1850
+Connection ~ 4700 1850
+Wire Wire Line
+	4700 1850 4350 1850
+Connection ~ 5050 1850
+Wire Wire Line
+	5050 1850 4700 1850
+Connection ~ 5400 1850
+Wire Wire Line
+	5400 1850 5050 1850
+Connection ~ 5750 1850
+Wire Wire Line
+	5750 1850 5400 1850
+Connection ~ 6100 1850
+Wire Wire Line
+	6100 1850 5750 1850
+Connection ~ 6450 1850
+Wire Wire Line
+	6450 1850 6100 1850
+Connection ~ 6800 1850
+Wire Wire Line
+	6800 1850 6450 1850
+Connection ~ 7150 1850
+Wire Wire Line
+	7150 1850 6800 1850
+Connection ~ 7500 1850
+Wire Wire Line
+	7500 1850 7150 1850
+Connection ~ 7850 1850
+Wire Wire Line
+	7850 1850 7500 1850
+Connection ~ 8200 1850
+Wire Wire Line
+	8200 1850 7850 1850
+Connection ~ 8550 1850
+Wire Wire Line
+	8550 1850 8200 1850
+Connection ~ 8900 1850
+Wire Wire Line
+	8900 1850 8550 1850
+Connection ~ 9250 1850
+Wire Wire Line
+	9250 1850 8900 1850
+Connection ~ 9600 1850
+Wire Wire Line
+	9600 1850 9250 1850
+Connection ~ 9950 1850
+Wire Wire Line
+	9950 1850 9600 1850
+Wire Wire Line
+	1050 1850 2250 1850
+Connection ~ 2250 1850
 $EndSCHEMATC

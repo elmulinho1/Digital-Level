@@ -1606,10 +1606,10 @@ Text GLabel 4100 4700 0    50   Output ~ 0
 LED23
 Text GLabel 4100 4800 0    50   Output ~ 0
 LED24
-Text GLabel 4100 4900 0    50   Output ~ 0
+Text GLabel 4100 4900 0    50   Input ~ 0
 BTN1
-Text GLabel 4100 5000 0    50   Output ~ 0
+Text GLabel 4100 5000 0    50   Input ~ 0
 BTN2
-Text GLabel 4100 5100 0    50   Output ~ 0
+Text GLabel 4100 5100 0    50   Input ~ 0
 BTN3
 $EndSCHEMATC

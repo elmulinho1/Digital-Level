@@ -1556,4 +1556,60 @@ Text GLabel 7900 2700 0    50   Input ~ 0
 BAT
 Text GLabel 3300 2600 0    50   Input ~ 0
 BAT
+Text GLabel 5400 4000 2    50   Output ~ 0
+LED-SW
+Text GLabel 5400 4100 2    50   Output ~ 0
+LED1
+Text GLabel 5400 4200 2    50   Output ~ 0
+LED2
+Text GLabel 5400 4300 2    50   Output ~ 0
+LED3
+Text GLabel 5400 4400 2    50   Output ~ 0
+LED4
+Text GLabel 5400 4500 2    50   Output ~ 0
+LED5
+Text GLabel 5400 4600 2    50   Output ~ 0
+LED6
+Text GLabel 5400 4700 2    50   Output ~ 0
+LED7
+Text GLabel 5400 4800 2    50   Output ~ 0
+LED8
+Text GLabel 5400 4900 2    50   Output ~ 0
+LED9
+Text GLabel 5400 5000 2    50   Output ~ 0
+LED10
+Text GLabel 5400 5100 2    50   Output ~ 0
+LED11
+Text GLabel 5400 5200 2    50   Output ~ 0
+LED12
+Text GLabel 5400 5300 2    50   Output ~ 0
+LED13
+Text GLabel 5400 5400 2    50   Output ~ 0
+LED14
+Text GLabel 5400 5500 2    50   Output ~ 0
+LED15
+Text GLabel 4100 4000 0    50   Output ~ 0
+LED16
+Text GLabel 4100 4100 0    50   Output ~ 0
+LED17
+Text GLabel 4100 4200 0    50   Output ~ 0
+LED18
+Text GLabel 4100 4300 0    50   Output ~ 0
+LED19
+Text GLabel 4100 4400 0    50   Output ~ 0
+LED20
+Text GLabel 4100 4500 0    50   Output ~ 0
+LED21
+Text GLabel 4100 4600 0    50   Output ~ 0
+LED22
+Text GLabel 4100 4700 0    50   Output ~ 0
+LED23
+Text GLabel 4100 4800 0    50   Output ~ 0
+LED24
+Text GLabel 4100 4900 0    50   Output ~ 0
+BTN1
+Text GLabel 4100 5000 0    50   Output ~ 0
+BTN2
+Text GLabel 4100 5100 0    50   Output ~ 0
+BTN3
 $EndSCHEMATC

@@ -48,17 +48,6 @@ F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 10300 2800 50  0001 C C
 	1    10300 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Sensor_Motion:MPU-6050 U2
-U 1 1 5E2F4231
-P 2150 6300
-F 0 "U2" H 2150 5511 50  0000 C CNN
-F 1 "MPU-6050" H 2150 5420 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm" H 2150 5500 50  0001 C CNN
-F 3 "https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf" H 2150 6150 50  0001 C CNN
-	1    2150 6300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 6200 3150 6200
 Wire Wire Line
@@ -105,7 +94,7 @@ Wire Wire Line
 	3600 6500 3600 6850
 Wire Wire Line
 	2250 5600 2250 5500
-Text GLabel 950  6000 0    50   Input ~ 0
+Text GLabel 950  6000 0    50   BiDi ~ 0
 SDA
 Text GLabel 950  6100 0    50   Input ~ 0
 SCL
@@ -832,8 +821,8 @@ $Comp
 L MCU_ST_STM32F1:STM32F103C8Tx U?
 U 1 1 5E56F575
 P 5750 4200
-F 0 "U?" H 5700 2611 50  0000 C CNN
-F 1 "STM32F103C8Tx" H 5700 2520 50  0000 C CNN
+F 0 "U?" H 5149 2729 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 5148 2638 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5150 2800 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 5750 4200 50  0001 C CNN
 	1    5750 4200
@@ -1275,28 +1264,17 @@ Wire Wire Line
 	1150 6500 1450 6500
 Wire Wire Line
 	950  6200 1450 6200
-$Comp
-L Device:Battery BT1
-U 1 1 5EAA7AF4
-P 9350 3100
-F 0 "BT1" H 9458 3146 50  0000 L CNN
-F 1 "Battery" H 9458 3055 50  0000 L CNN
-F 2 "" V 9350 3160 50  0001 C CNN
-F 3 "~" V 9350 3160 50  0001 C CNN
-	1    9350 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9350 3300 9350 3800
+	9350 3400 9350 3900
 $Comp
 L power:GND #PWR?
 U 1 1 5EABCA3C
-P 9350 3800
-F 0 "#PWR?" H 9350 3550 50  0001 C CNN
-F 1 "GND" H 9355 3627 50  0000 C CNN
-F 2 "" H 9350 3800 50  0001 C CNN
-F 3 "" H 9350 3800 50  0001 C CNN
-	1    9350 3800
+P 9350 3900
+F 0 "#PWR?" H 9350 3650 50  0001 C CNN
+F 1 "GND" H 9355 3727 50  0000 C CNN
+F 2 "" H 9350 3900 50  0001 C CNN
+F 3 "" H 9350 3900 50  0001 C CNN
+	1    9350 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1386,14 +1364,10 @@ Wire Wire Line
 Wire Wire Line
 	5850 2700 5850 2500
 Wire Wire Line
-	5650 2500 5750 2500
+	5650 2500 5700 2500
 Connection ~ 5750 2500
 Wire Wire Line
 	5750 2500 5850 2500
-Wire Wire Line
-	5750 2500 5750 2400
-Wire Wire Line
-	5750 2400 6850 2400
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5EB44B35
@@ -1406,8 +1380,7 @@ F 3 "" H 6850 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 2400 6850 2550
-Connection ~ 6850 2400
+	6850 2400 6850 2450
 $Comp
 L Device:L L?
 U 1 1 5EB4EAC7
@@ -1495,116 +1468,65 @@ Wire Wire Line
 Connection ~ 5850 5850
 Wire Wire Line
 	5850 5850 5750 5850
-Wire Wire Line
-	5550 2750 5550 2700
-Wire Wire Line
-	5550 2250 4700 2250
-Connection ~ 5550 2700
-Wire Wire Line
-	5550 2700 5550 2250
-Wire Wire Line
-	4700 2250 4700 2600
-Wire Wire Line
-	4700 2600 4550 2600
-$Comp
-L Diode:1N4148 D?
-U 1 1 5EBF9216
-P 4400 2600
-F 0 "D?" H 4400 2384 50  0000 C CNN
-F 1 "1N4148" H 4400 2475 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4400 2425 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4400 2600 50  0001 C CNN
-	1    4400 2600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:1N4148 D?
-U 1 1 5EBF9F21
-P 4400 2250
-F 0 "D?" H 4400 2034 50  0000 C CNN
-F 1 "1N4148" H 4400 2125 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4400 2075 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4400 2250 50  0001 C CNN
-	1    4400 2250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4550 2250 4700 2250
-Connection ~ 4700 2250
-Wire Wire Line
-	4250 2250 3900 2250
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5EC113E5
-P 3900 2250
-F 0 "#PWR?" H 3900 2100 50  0001 C CNN
-F 1 "+3.3V" H 3915 2423 50  0000 C CNN
-F 2 "" H 3900 2250 50  0001 C CNN
-F 3 "" H 3900 2250 50  0001 C CNN
-	1    3900 2250
-	1    0    0    -1  
-$EndComp
 Text GLabel 9350 2900 1    50   Output ~ 0
 BAT
-Text GLabel 10000 2800 0    50   Input ~ 0
+Text GLabel 9900 2800 0    50   Input ~ 0
 BAT
-Text GLabel 4250 2600 0    50   Input ~ 0
-BAT
-Text GLabel 6350 4000 2    50   Output ~ 0
+Text GLabel 6450 4000 2    50   Output ~ 0
 LED-SW
-Text GLabel 6350 4100 2    50   Output ~ 0
+Text GLabel 6450 4100 2    50   Output ~ 0
 LED1
-Text GLabel 6350 4200 2    50   Output ~ 0
+Text GLabel 6450 4200 2    50   Output ~ 0
 LED2
-Text GLabel 6350 4300 2    50   Output ~ 0
+Text GLabel 6450 4300 2    50   Output ~ 0
 LED3
-Text GLabel 6350 4400 2    50   Output ~ 0
+Text GLabel 6450 4400 2    50   Output ~ 0
 LED4
-Text GLabel 6350 4500 2    50   Output ~ 0
+Text GLabel 6450 4500 2    50   Output ~ 0
 LED5
-Text GLabel 6350 4600 2    50   Output ~ 0
+Text GLabel 6450 4600 2    50   Output ~ 0
 LED6
-Text GLabel 6350 4700 2    50   Output ~ 0
+Text GLabel 6450 4700 2    50   Output ~ 0
 LED7
-Text GLabel 6350 4800 2    50   Output ~ 0
+Text GLabel 6450 4800 2    50   Output ~ 0
 LED8
-Text GLabel 6350 4900 2    50   Output ~ 0
+Text GLabel 6450 4900 2    50   Output ~ 0
 LED9
-Text GLabel 6350 5000 2    50   Output ~ 0
+Text GLabel 6450 5000 2    50   Output ~ 0
 LED10
-Text GLabel 6350 5100 2    50   Output ~ 0
+Text GLabel 6450 5100 2    50   Output ~ 0
 LED11
-Text GLabel 6350 5200 2    50   Output ~ 0
+Text GLabel 6450 5200 2    50   Output ~ 0
 LED12
-Text GLabel 6350 5300 2    50   Output ~ 0
+Text GLabel 6450 5300 2    50   Output ~ 0
 LED13
-Text GLabel 6350 5400 2    50   Output ~ 0
+Text GLabel 6450 5400 2    50   Output ~ 0
 LED14
-Text GLabel 6350 5500 2    50   Output ~ 0
+Text GLabel 6450 5500 2    50   Output ~ 0
 LED15
-Text GLabel 5050 4000 0    50   Output ~ 0
+Text GLabel 4950 4000 0    50   Output ~ 0
 LED16
-Text GLabel 5050 4100 0    50   Output ~ 0
+Text GLabel 4950 4100 0    50   Output ~ 0
 LED17
-Text GLabel 5050 4200 0    50   Output ~ 0
+Text GLabel 4950 4200 0    50   Output ~ 0
 LED18
-Text GLabel 5050 4300 0    50   Output ~ 0
+Text GLabel 4950 4300 0    50   Output ~ 0
 LED19
-Text GLabel 5050 4400 0    50   Output ~ 0
+Text GLabel 4950 4400 0    50   Output ~ 0
 LED20
-Text GLabel 5050 4500 0    50   Output ~ 0
+Text GLabel 4950 4500 0    50   Output ~ 0
 LED21
-Text GLabel 5050 4600 0    50   Output ~ 0
+Text GLabel 4950 4800 0    50   Output ~ 0
 LED22
-Text GLabel 5050 4700 0    50   Output ~ 0
+Text GLabel 4950 4900 0    50   Output ~ 0
 LED23
-Text GLabel 5050 4800 0    50   Output ~ 0
+Text GLabel 4950 5000 0    50   Output ~ 0
 LED24
-Text GLabel 5050 4900 0    50   Input ~ 0
+Text GLabel 4950 5100 0    50   Input ~ 0
 BTN1
-Text GLabel 5050 5000 0    50   Input ~ 0
+Text GLabel 4950 5200 0    50   Input ~ 0
 BTN2
-Text GLabel 5050 5100 0    50   Input ~ 0
+Text GLabel 4950 5300 0    50   Input ~ 0
 BTN3
 Wire Wire Line
 	6450 1700 6450 1850
@@ -1622,67 +1544,180 @@ F 3 "~" H 6450 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4750 3500 4750 3600
+	4350 4500 4350 4600
 Wire Wire Line
-	4350 3700 4350 3500
+	3950 4700 3950 4500
 $Comp
 L Device:R R?
 U 1 1 5ED6A549
-P 4750 3350
-F 0 "R?" H 4820 3396 50  0000 L CNN
-F 1 "4.7k" H 4820 3305 50  0000 L CNN
-F 2 "" V 4680 3350 50  0001 C CNN
-F 3 "~" H 4750 3350 50  0001 C CNN
-	1    4750 3350
+P 4350 4350
+F 0 "R?" H 4420 4396 50  0000 L CNN
+F 1 "4.7k" H 4420 4305 50  0000 L CNN
+F 2 "" V 4280 4350 50  0001 C CNN
+F 3 "~" H 4350 4350 50  0001 C CNN
+	1    4350 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5ED6B787
-P 4350 3350
-F 0 "R?" H 4420 3396 50  0000 L CNN
-F 1 "4.7k" H 4420 3305 50  0000 L CNN
-F 2 "" V 4280 3350 50  0001 C CNN
-F 3 "~" H 4350 3350 50  0001 C CNN
-	1    4350 3350
+P 3950 4350
+F 0 "R?" H 4020 4396 50  0000 L CNN
+F 1 "4.7k" H 4020 4305 50  0000 L CNN
+F 2 "" V 3880 4350 50  0001 C CNN
+F 3 "~" H 3950 4350 50  0001 C CNN
+	1    3950 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5ED6C7CF
-P 4350 3200
-F 0 "#PWR?" H 4350 3050 50  0001 C CNN
-F 1 "+3.3V" H 4365 3373 50  0000 C CNN
-F 2 "" H 4350 3200 50  0001 C CNN
-F 3 "" H 4350 3200 50  0001 C CNN
-	1    4350 3200
+P 3950 4200
+F 0 "#PWR?" H 3950 4050 50  0001 C CNN
+F 1 "+3.3V" H 3965 4373 50  0000 C CNN
+F 2 "" H 3950 4200 50  0001 C CNN
+F 3 "" H 3950 4200 50  0001 C CNN
+	1    3950 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5ED6DF7F
-P 4750 3200
-F 0 "#PWR?" H 4750 3050 50  0001 C CNN
-F 1 "+3.3V" H 4765 3373 50  0000 C CNN
-F 2 "" H 4750 3200 50  0001 C CNN
-F 3 "" H 4750 3200 50  0001 C CNN
-	1    4750 3200
+P 4350 4200
+F 0 "#PWR?" H 4350 4050 50  0001 C CNN
+F 1 "+3.3V" H 4365 4373 50  0000 C CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+	1    4350 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 3950 3600 0    50   Output ~ 0
+Text GLabel 3550 4600 0    50   BiDi ~ 0
 SDA
-Text GLabel 3950 3700 0    50   Output ~ 0
+Text GLabel 3550 4700 0    50   Output ~ 0
 SCL
-Connection ~ 4350 3700
+Connection ~ 3950 4700
 Wire Wire Line
-	4750 3600 5050 3600
+	4350 4600 3550 4600
+Connection ~ 4350 4600
 Wire Wire Line
-	4750 3600 3950 3600
-Connection ~ 4750 3600
-Wire Wire Line
-	3950 3700 4350 3700
-Wire Wire Line
-	4350 3700 5050 3700
+	3550 4700 3950 4700
 Wire Wire Line
 	3300 2900 5050 2900
+Wire Wire Line
+	4950 4000 5050 4000
+Wire Wire Line
+	5050 4100 4950 4100
+Wire Wire Line
+	4950 4200 5050 4200
+Wire Wire Line
+	5050 4300 4950 4300
+Wire Wire Line
+	4950 4400 5050 4400
+Wire Wire Line
+	5050 4500 4950 4500
+Wire Wire Line
+	4950 4800 5050 4800
+Wire Wire Line
+	5050 4900 4950 4900
+Wire Wire Line
+	4950 5000 5050 5000
+Wire Wire Line
+	5050 5100 4950 5100
+Wire Wire Line
+	6350 4000 6450 4000
+Wire Wire Line
+	6450 4100 6350 4100
+Wire Wire Line
+	6350 4200 6450 4200
+Wire Wire Line
+	6450 4300 6350 4300
+Wire Wire Line
+	6350 4400 6450 4400
+Wire Wire Line
+	6450 4500 6350 4500
+Wire Wire Line
+	6350 4600 6450 4600
+Wire Wire Line
+	6450 4700 6350 4700
+Wire Wire Line
+	6350 4800 6450 4800
+Wire Wire Line
+	6450 4900 6350 4900
+Wire Wire Line
+	6350 5000 6450 5000
+Wire Wire Line
+	6450 5100 6350 5100
+Wire Wire Line
+	6350 5200 6450 5200
+Wire Wire Line
+	6450 5300 6350 5300
+Wire Wire Line
+	6350 5400 6450 5400
+Wire Wire Line
+	6450 5500 6350 5500
+Wire Wire Line
+	9900 2800 10000 2800
+Connection ~ 10000 2800
+$Comp
+L Sensor_Motion:MPU-6050 U2
+U 1 1 5E2F4231
+P 2150 6300
+F 0 "U2" H 2426 5707 50  0000 C CNN
+F 1 "MPU-6050" H 2425 5617 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm" H 2150 5500 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf" H 2150 6150 50  0001 C CNN
+	1    2150 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4600 5050 4600
+Wire Wire Line
+	3950 4700 5050 4700
+Wire Wire Line
+	5050 5200 4950 5200
+Wire Wire Line
+	5050 5300 4950 5300
+NoConn ~ 5050 5400
+NoConn ~ 5050 5500
+NoConn ~ 5050 3800
+NoConn ~ 5050 3700
+NoConn ~ 5050 3600
+NoConn ~ 5050 3400
+NoConn ~ 5050 3300
+Text Notes 7000 6950 0    79   ~ 0
+Schematic for a digital level that uses LEDs as a level indicator,\n MPU-6050 as an accelerometer and STM32f103C8T6 as an MCU.
+Text Notes 7800 7500 0    75   ~ 15
+Digital Level
+$Comp
+L Device:Battery BT1
+U 1 1 5F285D14
+P 9350 3200
+F 0 "BT1" H 9458 3246 50  0000 L CNN
+F 1 "Battery" H 9458 3155 50  0000 L CNN
+F 2 "" V 9350 3260 50  0001 C CNN
+F 3 "~" V 9350 3260 50  0001 C CNN
+	1    9350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2900 9350 3000
+Wire Wire Line
+	5550 2500 5650 2500
+Wire Wire Line
+	5550 2500 5550 2700
+Connection ~ 5550 2700
+Wire Wire Line
+	5550 2700 5550 2750
+Connection ~ 5650 2500
+Wire Wire Line
+	6850 2450 5700 2450
+Wire Wire Line
+	5700 2450 5700 2500
+Connection ~ 6850 2450
+Wire Wire Line
+	6850 2450 6850 2550
+Connection ~ 5700 2500
+Wire Wire Line
+	5700 2500 5750 2500
+NoConn ~ 5050 3100
 $EndSCHEMATC

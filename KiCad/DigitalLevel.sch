@@ -714,8 +714,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 1400 2250 1350
 Wire Wire Line
-	6450 1400 6450 1350
-Wire Wire Line
 	6800 1400 6800 1350
 Wire Wire Line
 	7150 1400 7150 1350
@@ -800,8 +798,6 @@ Wire Wire Line
 	7150 1700 7150 1850
 Wire Wire Line
 	6800 1700 6800 1850
-Wire Wire Line
-	6450 1700 6450 1850
 Wire Wire Line
 	6100 1700 6100 1850
 Wire Wire Line
@@ -1612,4 +1608,81 @@ Text GLabel 4100 5000 0    50   Input ~ 0
 BTN2
 Text GLabel 4100 5100 0    50   Input ~ 0
 BTN3
+Wire Wire Line
+	6450 1700 6450 1850
+Wire Wire Line
+	6450 1400 6450 1350
+$Comp
+L Device:LED D?
+U 1 1 5ED0B1A6
+P 6450 1550
+F 0 "D?" V 6397 1628 50  0000 L CNN
+F 1 "LED" V 6488 1628 50  0000 L CNN
+F 2 "" H 6450 1550 50  0001 C CNN
+F 3 "~" H 6450 1550 50  0001 C CNN
+	1    6450 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 3500 3900 3600
+Wire Wire Line
+	3650 3700 3650 3500
+Connection ~ 3650 3700
+Wire Wire Line
+	3650 3700 3300 3700
+$Comp
+L Device:R R?
+U 1 1 5ED6A549
+P 3900 3350
+F 0 "R?" H 3970 3396 50  0000 L CNN
+F 1 "4.7k" H 3970 3305 50  0000 L CNN
+F 2 "" V 3830 3350 50  0001 C CNN
+F 3 "~" H 3900 3350 50  0001 C CNN
+	1    3900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED6B787
+P 3650 3350
+F 0 "R?" H 3720 3396 50  0000 L CNN
+F 1 "4.7k" H 3720 3305 50  0000 L CNN
+F 2 "" V 3580 3350 50  0001 C CNN
+F 3 "~" H 3650 3350 50  0001 C CNN
+	1    3650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5ED6C7CF
+P 3650 3200
+F 0 "#PWR?" H 3650 3050 50  0001 C CNN
+F 1 "+3.3V" H 3665 3373 50  0000 C CNN
+F 2 "" H 3650 3200 50  0001 C CNN
+F 3 "" H 3650 3200 50  0001 C CNN
+	1    3650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5ED6DF7F
+P 3900 3200
+F 0 "#PWR?" H 3900 3050 50  0001 C CNN
+F 1 "+3.3V" H 3915 3373 50  0000 C CNN
+F 2 "" H 3900 3200 50  0001 C CNN
+F 3 "" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3600 3900 3600
+Connection ~ 3900 3600
+Wire Wire Line
+	3900 3600 4100 3600
+Wire Wire Line
+	3650 3700 4100 3700
+Text GLabel 3300 3600 0    50   Output ~ 0
+SDA
+Text GLabel 3300 3700 0    50   Output ~ 0
+SCL
 $EndSCHEMATC
